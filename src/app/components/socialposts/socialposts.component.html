@@ -1,0 +1,3 @@
+<app-postform (PostCreated)="AddPost($event)"></app-postform>
+
+<app-singlepost (delete)="RemovePost($event)" *ngFor="let p of GetPostsByNewest()" [post]="p"></app-singlepost> 

@@ -1,0 +1,12 @@
+<button (click)="toggleForm()">ToggleForm</button>
+
+<div *ngIf="displayForm">
+
+<p>Enter Title:</p>
+<input type= "text"[(ngModel)]="newPost.title" />
+<p>Enter Thought:</p>
+<input type="text" [(ngModel)]="newPost.thought" />
+
+<button (click)="submitPost()">Add Post</button>
+
+</div>
